@@ -18,24 +18,16 @@ class MainActivity : AppCompatActivity() {
 
     fun add(view:View){
 
-
-
-        //creating objects
-        // var tableview = tableviews
         val tablerow= TableRow(getApplicationContext())
-        //styling table row
         tablerow.setBackgroundColor(Color.rgb(0, 0, 0))
         val layoutParamsrow= TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT)
         layoutParamsrow.setMargins(0,0,0,2)
 
         val layoutParamstv2= TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT)
         val layoutParams= TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT)
-        layoutParams.setMargins(0,2,0,2)
-        layoutParamstv2.setMargins(0,2,2,2)
-        //tablerow.setLayoutParams(layoutParamsrow)
-
-
-        //styling TextView
+        layoutParams.setMargins(0,2,0,0)
+        layoutParamstv2.setMargins(0,2,2,0)
+        tablerow.setLayoutParams(layoutParamsrow)
 
         val Textview1 = TextView(this)
         val Textview2 = TextView(this)
@@ -43,19 +35,12 @@ class MainActivity : AppCompatActivity() {
         Textview1.setBackgroundColor(Color.rgb(253, 61, 126))
         Textview2.setBackgroundColor(Color.rgb(253, 61, 126))
 
-        Textview1.setTextColor(Color.rgb(0,0,0))
-        Textview2.setTextColor(Color.rgb(0,0,0))
 
         Textview1.layoutParams=layoutParamstv2
         Textview2.layoutParams=layoutParams
 
         Textview1.setTextSize(14f)
         Textview2.setTextSize(14f)
-
-
-        //Textview1.setLayoutParams(layoutParams)
-        //Textview2.setLayoutParams(layoutParams);
-
 
 
         //setting text on text View
@@ -68,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         tablerow.addView(Textview2,1)
 
         var space= Space(this)
-        space.minimumHeight=3
+        space.minimumHeight=8
 
 
         tableviews.addView(tablerow)
