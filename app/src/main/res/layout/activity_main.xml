@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:hint="Enter Android Version" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="102dp"
+        android:hint="Enter Android Code Name" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="167dp"
+        android:text="ADD"
+        android:onClick="add"/>
+
+    <TableLayout
+        android:layout_width="381dp"
+        android:layout_height="476dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="255dp"
+        android:id="@+id/tableviews">
+
+        <TableRow
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#000">
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:text="Version"
+                android:background="#fd3d7e"
+                android:layout_marginRight="1dp"/>
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:text="Code Name"
+                android:background="#fd3d7e"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#000">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:text="android 9.0"
+                android:background="#fd3d7e"
+                android:layout_marginRight="1dp"/>
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:text="Pie"
+                android:background="#fd3d7e"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#000">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:text="android 8.0"
+                android:background="#fd3d7e"
+                android:layout_marginRight="1dp"/>
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:text="Oreo"
+                android:background="#fd3d7e"/>
+        </TableRow>
+
+
+
+
+
+
+
+    </TableLayout>
+
+
+</RelativeLayout>
